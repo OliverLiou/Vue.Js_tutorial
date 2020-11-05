@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Bin</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+    <div id="app">
+        <p v-once>{{msg}}</p> <!--[v-once]只渲染一次--->
+        <p>{{msg}}</p>
+
+    </br>
+    </br>
+    </br>
+    <p>{{htmlRaw}}</p>
+    </br>
+    <p v-html="htmlRaw"></p>
+    <p v-text="htmlRaw">45454545454</p>
+    <p v-html="test">gsdgsdgsdsd</p>
+    </div>
+     
+
+    <script>
+        let data = {
+        msg:'Hello Vue',
+        htmlRaw:'<span style="color: red">This should be red</span>',
+        test:'<img src="aaa.jpg" onerror="window.alert(`Error.....`)"/>'
+    }
+
+    // Object.freeze(data)
+        let app= new Vue({
+            el:'#app',
+            data,
+            created: function(){
+                console.log(this)
+            },
+
+            // created: () =>{
+            //     console.log(this)
+            // } 不要使用箭頭函數，因為箭頭函數並沒有this
+        })
+    </script>
+</body>
+</html>

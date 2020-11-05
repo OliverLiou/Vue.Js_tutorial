@@ -1,0 +1,6 @@
+[ 想入門，我陪你 ] Re Vue 重頭說起｜Day 2：實體化與模板語法
+https://www.youtube.com/watch?v=52Uu1VhsYI8&list=PLEfh-m_KG4dapPjoPvWX0c8JCK6-mIvGr&index=3&ab_channel=Alex%E5%AE%85%E5%B9%B9%E5%98%9B
+2020/11/05 - 2:01:27
+Vus.js官網文件
+https://cn.vuejs.org/v2/guide/syntax.html
+-----------------------------------------------

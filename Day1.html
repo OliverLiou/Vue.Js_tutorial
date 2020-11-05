@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Bin</title>
+</head>
+<body>
+<div id="1">
+    <span>data1</span>
+    <span>data2</span>
+    <span>data3</span>
+    <span>data4</span>
+    <span>data5</span>
+</div>
+
+<div id="2">
+    <span>data1</span>
+    <span>data2</span>
+    <span>data3</span>
+    <span>data4</span>
+    <span>data5</span>
+</div>
+
+<div id="3">
+    <span>data1</span>
+    <span>data2</span>
+    <span>data3</span>
+    <span>data4</span>
+    <span>data5</span>
+</div>
+
+<div id="4">
+    <span>data1</span>
+    <span>data2</span>
+    <span>data3</span>
+    <span>data4</span>
+    <span>data5</span>
+</div>
+
+<div id="Section5">
+  <p>{{ copyright }}</p>
+  <br/>
+  <!-- <p>All rights reserved by {{company}} & HSIN CHONG MACHINERY WORKS CO. LTD. Designed by Honeycomb - {{year}} </p> -->
+</br>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+<script>
+    // ;(function(){
+    //     new Vue({
+    //         el:'#Section5',
+    //         data:{
+    //             copyright:'版權所有 轉載必究',
+    //             company:'信昌機械股份有限公司',
+    //             year:new Date().getFullYear()
+    //         }
+    //     })
+    // })()
+
+
+    let app = new Vue ({
+        el:'#Section5',
+        data:{
+            copyright:'版權所有 轉載必究'
+        }
+    })
+</script>
+
+</body>
+</html>

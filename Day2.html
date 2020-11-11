@@ -8,9 +8,11 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 
+    
     <div id="app">
         <p v-once>{{msg}}</p> <!--[v-once]只渲染一次--->
         <p>{{msg}}</p>
+        
 
     </br>
     </br>
@@ -19,9 +21,11 @@
     </br>
     <p v-html="htmlRaw"></p>
     <p v-text="htmlRaw">45454545454</p>
-    <p v-html="test">gsdgsdgsdsd</p>
+    <!-- <p v-html="test">gsdgsdgsdsd</p> -->
     </div>
-     
+    <!-- <script type="text/x-template" id ="page-template">
+        <span style="color: green"> This msg {{msg}} should be green </span>
+    </script>  -->
 
     <script>
         let data = {
@@ -30,13 +34,16 @@
         test:'<img src="aaa.jpg" onerror="window.alert(`Error.....`)"/>'
     }
 
-    // Object.freeze(data)
+    // Object.freeze(data) Frezze後變數不會再變動
+
         let app= new Vue({
             el:'#app',
+            // template: '<span style="color: green"> This should be green </span>', //template 會蓋掉id為app裡面所有內容
+            // template:'#page-template',
             data,
-            created: function(){
-                console.log(this)
-            },
+            // created: function(){
+            //     console.log(this)
+            // },
 
             // created: () =>{
             //     console.log(this)
